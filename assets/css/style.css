@@ -145,7 +145,50 @@ header .header__location i {
   border-top-right-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 230px;
 }
 .restaurants__card-content {
   margin-left: 13px;
+}
+
+.column-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding: 22px 25px;
+  margin-top: 66px;
+}
+.column-footer__logo-footer {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin: 0 0 16px 0;
+}
+.column-footer__block-1 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  row-gap: 7px;
+}
+.column-footer__text-block-1 {
+  display: flex;
+  font-weight: 500;
+  margin: 0;
+  gap: 11px;
+  color: white;
+}
+.column-footer__text-block-1 i {
+  width: 12px;
+  color: white;
+}
+.column-footer__block-2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  row-gap: 7px;
+  margin-top: 7px;
+}
+.column-footer__text-block-2 {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

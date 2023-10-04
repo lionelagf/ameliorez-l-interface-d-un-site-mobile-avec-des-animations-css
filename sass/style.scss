@@ -72,7 +72,7 @@ header {
 .heart {
   position: absolute;
   display: flex;
- justify-content: flex-end;
+  justify-content: flex-end;
   right: 43px;
   font-size: 22px;
 }
@@ -158,8 +158,57 @@ header {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
+    height: 230px;
   }
   &__card-content {
     margin-left: 13px;
+  }
+}
+
+.column-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-grey;
+  padding: 22px 25px;
+  margin-top: 66px;
+
+  &__logo-footer {
+    font-family: 'Shrikhand';
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin: 0 0 16px 0;
+  }
+
+  &__block-1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    row-gap: 7px;
+  }
+
+  &__text-block-1 {
+    display: flex;
+    font-weight: 500;
+    margin: 0;
+    gap: 11px;
+    color: white;
+
+    i {
+      width: 12px;
+      color: white;
+    }
+  }
+
+  &__block-2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    row-gap: 7px;
+    margin-top: 7px;
+  }
+
+  &__text-block-2 {
+    margin: 0;
   }
 }
