@@ -62,6 +62,21 @@ header {
   }
 }
 
+.card-title {
+  margin: 16px 0 5px 0;
+}
+.card-subtitle {
+  margin: 0 0 12px 0;
+}
+
+.heart {
+  position: absolute;
+  display: flex;
+ justify-content: flex-end;
+  right: 43px;
+  font-size: 22px;
+}
+
 .explore {
   display: flex;
   flex-direction: column;
@@ -70,7 +85,6 @@ header {
   text-align: center;
   padding: 40px 0 57px 0;
   background-color: $light-grey;
-
 
   .gradient-button {
     border-radius: 25px;
@@ -91,39 +105,61 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px;
+
   &__button {
     display: flex;
   }
 
- &__number {
+  &__number {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     position: relative;
     top: 27px;
-    left: 20px; 
+    left: 20px;
     font-size: 14px;
     width: 24px;
     height: 24px;
     border-radius: 25px;
     background-color: $main-color;
     color: white;
- }
-    
-    &__text {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      font-size: 16px;
-      border-radius: 20px;
-      background-color: $light-grey;
-      gap: 10px;
-      padding: 28px 38px;
-      margin-left: 10px;
-      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    }
- }
+  }
 
- 
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: $light-grey;
+    gap: 10px;
+    padding: 28px 38px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: $light-grey;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 18px;
+    border-radius: 15px;
+  }
+  img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+  }
+  &__card-content {
+    margin-left: 13px;
+  }
+}
