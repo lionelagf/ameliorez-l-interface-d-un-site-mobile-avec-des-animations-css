@@ -140,6 +140,16 @@ header .header__location i {
   margin-top: 18px;
   border-radius: 15px;
 }
+.restaurants__new-button {
+  position: absolute;
+  display: flex;
+  padding: 6px 9px;
+  right: 35px;
+  font-size: 14px;
+  color: #008766;
+  background-color: #99e2d0;
+  border-radius: 2px;
+}
 .restaurants img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;

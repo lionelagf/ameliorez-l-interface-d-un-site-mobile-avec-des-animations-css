@@ -10,6 +10,7 @@ $light-medium-grey: #eaeaea;
 $medium-grey: #7e7e7e;
 $dark-grey: #353535;
 $button-gradient: linear-gradient(0deg, #9356dc, #ff79d9);
+$dark-green: #008766;
 
 a {
   color: inherit;
@@ -154,6 +155,18 @@ header {
     margin-top: 18px;
     border-radius: 15px;
   }
+
+  &__new-button {
+    position: absolute;
+    display: flex;
+    padding: 6px 9px;
+    right: 35px;
+    font-size: 14px;
+    color: $dark-green;
+    background-color: $third-color;
+    border-radius: 2px;
+  }
+
   img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
