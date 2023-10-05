@@ -131,6 +131,7 @@ header .header__location i {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin-bottom: 66px;
   background-color: #f6f6f6;
 }
 .restaurants__card {
@@ -166,7 +167,6 @@ header .header__location i {
   flex-direction: column;
   background-color: #353535;
   padding: 22px 25px;
-  margin-top: 66px;
 }
 .column-footer__logo-footer {
   font-family: "Shrikhand";

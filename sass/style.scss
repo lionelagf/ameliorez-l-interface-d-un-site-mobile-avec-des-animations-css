@@ -146,6 +146,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin-bottom: 66px;
   background-color: $light-grey;
 
   &__card {
@@ -183,7 +184,7 @@ header {
   flex-direction: column;
   background-color: $dark-grey;
   padding: 22px 25px;
-  margin-top: 66px;
+  
 
   &__logo-footer {
     font-family: 'Shrikhand';
