@@ -59,7 +59,7 @@ header .header__location i {
   margin: 0 0 12px 0;
 }
 
-.heart {
+.fa-heart {
   position: absolute;
   display: flex;
   justify-content: flex-end;
@@ -146,6 +146,7 @@ header .header__location i {
   display: flex;
   padding: 6px 9px;
   right: 35px;
+  margin-top: 15px;
   font-size: 14px;
   color: #008766;
   background-color: #99e2d0;

@@ -70,7 +70,7 @@ header {
   margin: 0 0 12px 0;
 }
 
-.heart {
+.fa-heart {
   position: absolute;
   display: flex;
   justify-content: flex-end;
@@ -162,6 +162,7 @@ header {
     display: flex;
     padding: 6px 9px;
     right: 35px;
+    margin-top: 15px;
     font-size: 14px;
     color: $dark-green;
     background-color: $third-color;
@@ -184,7 +185,6 @@ header {
   flex-direction: column;
   background-color: $dark-grey;
   padding: 22px 25px;
-  
 
   &__logo-footer {
     font-family: 'Shrikhand';
@@ -225,4 +225,7 @@ header {
   &__text-block-2 {
     margin: 0;
   }
+}
+
+@media screen and (min-width: 1024px) {
 }
