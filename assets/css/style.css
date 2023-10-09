@@ -56,14 +56,15 @@ header .header__location i {
 }
 
 .card-subtitle {
-  margin: 0 0 12px 0;
+  margin: 0 0 18px 0;
 }
 
 .fa-heart {
   position: absolute;
   display: flex;
   justify-content: flex-end;
-  right: 43px;
+  top: 23px;
+  right: 28px;
   font-size: 22px;
 }
 
@@ -116,7 +117,6 @@ header .header__location i {
 .operating__text {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
   font-size: 16px;
   border-radius: 20px;
@@ -141,7 +141,7 @@ header .header__location i {
   margin-top: 18px;
   border-radius: 15px;
 }
-.restaurants__new-button {
+.restaurants__new-note {
   position: absolute;
   display: flex;
   padding: 6px 9px;
@@ -160,6 +160,7 @@ header .header__location i {
   height: 230px;
 }
 .restaurants__card-content {
+  position: relative;
   margin-left: 13px;
 }
 
