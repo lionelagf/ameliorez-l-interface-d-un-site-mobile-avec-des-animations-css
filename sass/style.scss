@@ -72,7 +72,7 @@ header {
 
 .fa-heart {
   position: absolute;
-  top: 245px;
+  top: 8px;
   right: 28px;
   font-size: 22px;
   opacity: 1;
@@ -186,7 +186,7 @@ header {
     position: absolute;
     display: flex;
     padding: 6px 9px;
-    right: 35px;
+    right: 17px;
     margin-top: 15px;
     font-size: 14px;
     color: $dark-green;
@@ -285,4 +285,130 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+}
+
+///////*La Palette du Goût*///////
+
+.header__restaurant {
+  height: 250px;
+}
+
+.header__restaurant-img {
+  width: 100%;
+  position: relative;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+
+
+.menu {
+  position: relative;
+  top: -20px;
+  margin-bottom: -20px;
+  z-index: 1;
+  padding: 0 17px 0 17px;
+  border-radius: 40px 40px 0 0;
+  background-color: $light-grey;
+
+  &__title {
+    margin: 32px 0 40px 0;
+    position: relative;
+  }
+  &__title-h3 {
+    font-family: 'Shrikhand';
+    font-size: 28px;
+    margin: 0;
+  }
+}
+
+.menu-section {
+  &__category {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+
+    &::after {
+      display: block;
+      bottom: 2px;
+      content: '';
+      width: 40px;
+      height: 4px;
+      margin-top: 7px;
+      background-color: $third-color;
+    }
+  }
+}
+
+
+
+
+fa-circle-check {
+  content: '';
+  font: var(--fa-font-solid);
+  content: '\f058';
+  margin-top: 12px;
+  color: white;
+  background-color: $third-color;
+  font-size: 22px;
+ 
+  border-radius: 0 15px 15px 0;
+  width: 59px;
+}
+
+
+
+///////*Nouveau card*///
+.menu-card {
+  display: flex;
+ 
+
+  &__text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+     background-color: white;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+  border-radius: 15px 0 0 15px;
+  padding: 15px;
+  }
+
+  &__designation {
+
+    & h3 {
+      margin: 0;
+    }
+    & p {
+      margin: 5px 0 0 0;
+      overflow: hidden;
+    }
+  
+  }
+    &__price {
+    display: flex;
+    margin: 0;
+    color: $dark-grey;
+  }
+  &__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    color: white;
+  background-color: $third-color;
+  font-size: 22px;
+ 
+  border-radius: 0 15px 15px 0;
+  width: 59px;
+  }
 }

@@ -61,7 +61,7 @@ header .header__location i {
 
 .fa-heart {
   position: absolute;
-  top: 245px;
+  top: 8px;
   right: 28px;
   font-size: 22px;
   opacity: 1;
@@ -170,7 +170,7 @@ header .header__location i {
   position: absolute;
   display: flex;
   padding: 6px 9px;
-  right: 35px;
+  right: 17px;
   margin-top: 15px;
   font-size: 14px;
   color: #008766;
@@ -254,4 +254,106 @@ header .header__location i {
     opacity: 1;
     transform: scale(1.1);
   }
+}
+.header__restaurant {
+  height: 250px;
+}
+
+.header__restaurant-img {
+  width: 100%;
+  position: relative;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.menu {
+  position: relative;
+  top: -20px;
+  margin-bottom: -20px;
+  z-index: 1;
+  padding: 0 17px 0 17px;
+  border-radius: 40px 40px 0 0;
+  background-color: #f6f6f6;
+}
+.menu__title {
+  margin: 32px 0 40px 0;
+  position: relative;
+}
+.menu__title-h3 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  margin: 0;
+}
+
+.menu-section__category {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+.menu-section__category::after {
+  display: block;
+  bottom: 2px;
+  content: "";
+  width: 40px;
+  height: 4px;
+  margin-top: 7px;
+  background-color: #99e2d0;
+}
+
+fa-circle-check {
+  content: "";
+  font: var(--fa-font-solid);
+  content: "\f058";
+  margin-top: 12px;
+  color: white;
+  background-color: #99e2d0;
+  font-size: 22px;
+  border-radius: 0 15px 15px 0;
+  width: 59px;
+}
+
+.menu-card {
+  display: flex;
+}
+.menu-card__text {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+  border-radius: 15px 0 0 15px;
+  padding: 15px;
+}
+.menu-card__designation h3 {
+  margin: 0;
+}
+.menu-card__designation p {
+  margin: 5px 0 0 0;
+  overflow: hidden;
+}
+.menu-card__price {
+  display: flex;
+  margin: 0;
+  color: #353535;
+}
+.menu-card__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  color: white;
+  background-color: #99e2d0;
+  font-size: 22px;
+  border-radius: 0 15px 15px 0;
+  width: 59px;
 }/*# sourceMappingURL=style.css.map */
