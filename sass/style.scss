@@ -306,8 +306,6 @@ header {
   font-size: 20px;
 }
 
-
-
 .menu {
   position: relative;
   top: -20px;
@@ -318,7 +316,7 @@ header {
   background-color: $light-grey;
 
   &__title {
-    margin: 32px 0 40px 0;
+    margin-top: 32px;
     position: relative;
   }
   &__title-h3 {
@@ -334,7 +332,7 @@ header {
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 0;
+    margin-top: 40px;
 
     &::after {
       display: block;
@@ -348,9 +346,6 @@ header {
   }
 }
 
-
-
-
 fa-circle-check {
   content: '';
   font: var(--fa-font-solid);
@@ -359,42 +354,43 @@ fa-circle-check {
   color: white;
   background-color: $third-color;
   font-size: 22px;
- 
+
   border-radius: 0 15px 15px 0;
   width: 59px;
 }
 
-
-
 ///////*Nouveau card*///
 .menu-card {
   display: flex;
- 
 
   &__text {
+    overflow: hidden;
+
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
-     background-color: white;
-  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-  margin-top: 12px;
-  border-radius: 15px 0 0 15px;
-  padding: 15px;
+    background-color: white;
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 12px;
+    border-radius: 15px 0 0 15px;
+    padding: 15px;
   }
 
   &__designation {
+    overflow: hidden;
 
     & h3 {
       margin: 0;
     }
     & p {
       margin: 5px 0 0 0;
-      overflow: hidden;
+       white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
     }
-  
   }
-    &__price {
+  &__price {
     display: flex;
     margin: 0;
     color: $dark-grey;
@@ -405,10 +401,25 @@ fa-circle-check {
     align-items: center;
     margin-top: 12px;
     color: white;
-  background-color: $third-color;
-  font-size: 22px;
- 
-  border-radius: 0 15px 15px 0;
-  width: 59px;
+    background-color: $third-color;
+    font-size: 22px;
+
+    border-radius: 0 15px 15px 0;
+    width: 59px !important;
+  }
+}
+ .order-button {
+display: flex;
+justify-content: center;
+  & a {
+    
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    background: $button-gradient;
+    padding: 16px 49px;
+    margin: 40px 0 40px 0;
+    text-decoration: none;
+    color: white;
+    text-align: center;
   }
 }
