@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 
-.fa-solid {
+.fa-location-dot {
   color: #9356dc;
 }
 
@@ -61,11 +61,35 @@ header .header__location i {
 
 .fa-heart {
   position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  top: 23px;
+  top: 245px;
   right: 28px;
   font-size: 22px;
+  opacity: 1;
+  transition: 300ms;
+}
+.fa-heart::after {
+  content: "";
+  font: var(--fa-font-solid);
+  content: "\f004";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #9356dc, #ff79d9);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  opacity: 0;
+}
+
+.checkbox_input {
+  display: none;
+}
+
+.checkbox_input:checked + .fa-heart::after {
+  animation: heart 500ms both cubic-bezier(0.59, 0.68, 0.34, 0.89);
 }
 
 .explore {
@@ -135,6 +159,7 @@ header .header__location i {
   background-color: #f6f6f6;
 }
 .restaurants__card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -153,8 +178,8 @@ header .header__location i {
   border-radius: 2px;
 }
 .restaurants img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
   height: 230px;
@@ -203,4 +228,30 @@ header .header__location i {
 }
 .column-footer__text-block-2 {
   margin: 0;
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  15% {
+    opacity: 0.25;
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.6);
+  }
+  95% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }/*# sourceMappingURL=style.css.map */
