@@ -274,11 +274,12 @@ header {
 }
 
 .menu {
+  overflow: hidden;
   position: relative;
   top: -20px;
   margin-bottom: -20px;
   z-index: 1;
-  padding: 0 17px 0 17px;
+  padding: 0 17px 17px 17px;
   border-radius: 40px 40px 0 0;
   background-color: $light-grey;
 
@@ -328,6 +329,7 @@ fa-circle-check {
 
 ///////*Nouveau card*///
 .menu-card {
+  position: relative;
   overflow: hidden;
   display: flex;
   background-color: white;
@@ -356,7 +358,7 @@ fa-circle-check {
     font-size: 22px;
     border-radius: 0 15px 15px 0;
     width: 20%;
-    transition: 1s;
+    transition: ease-in-out 500ms;
   }
 
   &__text {
@@ -372,6 +374,9 @@ fa-circle-check {
     overflow: hidden;
     & h3 {
       margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
     & p {
       margin: 5px 0 0 0;
@@ -388,7 +393,7 @@ fa-circle-check {
 }
 
 .fa-circle-check {
-  transition: all 1s;
+  transition: all 700ms;
   color: $third-color;
 }
 
@@ -439,4 +444,30 @@ fa-circle-check {
 }
 .checkbox_input:checked + .fa-heart::after {
   animation: heart 500ms both cubic-bezier(0.59, 0.68, 0.34, 0.89);
+}
+
+.section-delay1 {
+  animation: section both 600ms ease-in-out;
+  opacity: 0;
+}
+
+.section-delay2 {
+  animation: section both 600ms 200ms ease-in-out;
+  opacity: 0;
+}
+
+.section-delay3 {
+  animation: section both 600ms 400ms ease-in-out;
+  opacity: 0;
+}
+
+@keyframes section {
+  0% {
+    transform: translate(400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
 }

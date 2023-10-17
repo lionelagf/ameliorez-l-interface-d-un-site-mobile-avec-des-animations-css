@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -148,7 +148,7 @@ header .header__location i {
   width: 100%;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 230px;
 }
 .restaurants__card-content {
@@ -163,7 +163,7 @@ header .header__location i {
   padding: 22px 25px;
 }
 .column-footer__logo-footer {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   font-size: 18px;
   font-weight: 400;
   color: white;
@@ -240,11 +240,12 @@ header .header__location i {
 }
 
 .menu {
+  overflow: hidden;
   position: relative;
   top: -20px;
   margin-bottom: -20px;
   z-index: 1;
-  padding: 0 17px 0 17px;
+  padding: 0 17px 17px 17px;
   border-radius: 40px 40px 0 0;
   background-color: #f6f6f6;
 }
@@ -253,7 +254,7 @@ header .header__location i {
   position: relative;
 }
 .menu__title-h3 {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   font-size: 28px;
   margin: 0;
 }
@@ -268,7 +269,7 @@ header .header__location i {
 .menu-section__category::after {
   display: block;
   bottom: 2px;
-  content: '';
+  content: "";
   width: 40px;
   height: 4px;
   margin-top: 7px;
@@ -276,9 +277,9 @@ header .header__location i {
 }
 
 fa-circle-check {
-  content: '';
+  content: "";
   font: var(--fa-font-solid);
-  content: '\f058';
+  content: "\f058";
   margin-top: 12px;
   color: white;
   background-color: #99e2d0;
@@ -288,6 +289,7 @@ fa-circle-check {
 }
 
 .menu-card {
+  position: relative;
   overflow: hidden;
   display: flex;
   background-color: white;
@@ -314,7 +316,7 @@ fa-circle-check {
   font-size: 22px;
   border-radius: 0 15px 15px 0;
   width: 20%;
-  transition: 1s;
+  transition: ease-in-out 500ms;
 }
 .menu-card__text {
   overflow: hidden;
@@ -329,6 +331,9 @@ fa-circle-check {
 }
 .menu-card__designation h3 {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-card__designation p {
   margin: 5px 0 0 0;
@@ -343,7 +348,7 @@ fa-circle-check {
 }
 
 .fa-circle-check {
-  transition: all 1s;
+  transition: all 700ms;
   color: #99e2d0;
 }
 
@@ -371,9 +376,9 @@ fa-circle-check {
   transition: 300ms;
 }
 .fa-heart::after {
-  content: '';
+  content: "";
   font: var(--fa-font-solid);
-  content: '\f004';
+  content: "\f004";
   position: absolute;
   top: 0;
   right: 0;
@@ -393,4 +398,30 @@ fa-circle-check {
 
 .checkbox_input:checked + .fa-heart::after {
   animation: heart 500ms both cubic-bezier(0.59, 0.68, 0.34, 0.89);
-} /*# sourceMappingURL=style.css.map */
+}
+
+.section-delay1 {
+  animation: section both 600ms ease-in-out;
+  opacity: 0;
+}
+
+.section-delay2 {
+  animation: section both 600ms 200ms ease-in-out;
+  opacity: 0;
+}
+
+.section-delay3 {
+  animation: section both 600ms 400ms ease-in-out;
+  opacity: 0;
+}
+
+@keyframes section {
+  0% {
+    transform: translate(400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
