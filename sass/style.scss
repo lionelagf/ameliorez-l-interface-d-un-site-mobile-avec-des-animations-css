@@ -70,39 +70,6 @@ header {
   margin: 0 0 18px 0;
 }
 
-.fa-heart {
-  position: absolute;
-  top: 8px;
-  right: 28px;
-  font-size: 22px;
-  opacity: 1;
-  transition: 300ms;
-
-  &::after {
-    content: '';
-    font: var(--fa-font-solid);
-    content: '\f004';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: $button-gradient;
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 22px;
-    opacity: 0;
-  }
-}
-
-.checkbox_input {
-  display: none;
-}
-.checkbox_input:checked + .fa-heart::after {
-  animation: heart 500ms both cubic-bezier(0.59, 0.68, 0.34, 0.89);
-}
-
 .explore {
   display: flex;
   flex-direction: column;
@@ -252,7 +219,7 @@ header {
     margin: 0;
   }
 }
-//////* Animations *//////
+//////* Keyframes *//////
 @keyframes heart {
   0% {
     opacity: (0);
@@ -361,58 +328,74 @@ fa-circle-check {
 
 ///////*Nouveau card*///
 .menu-card {
+  overflow: hidden;
   display: flex;
+  background-color: white;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+  border-radius: 15px;
+
+  &:hover > &__check {
+    margin-right: 0;
+
+    .fa-circle-check {
+      transform: rotate(360deg);
+      color: white;
+    }
+  }
+
+  &__check {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -75px;
+    color: white;
+    background-color: $third-color;
+    font-size: 22px;
+    border-radius: 0 15px 15px 0;
+    width: 20%;
+    transition: 1s;
+  }
 
   &__text {
     overflow: hidden;
-
+    padding: 15px 0 15px 15px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: white;
-    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-    margin-top: 12px;
-    border-radius: 15px 0 0 15px;
-    padding: 15px;
   }
 
   &__designation {
     overflow: hidden;
-
     & h3 {
       margin: 0;
     }
     & p {
       margin: 5px 0 0 0;
-       white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
   &__price {
     display: flex;
-    margin: 0;
+    margin: 0 10px 0 0;
     color: $dark-grey;
   }
-  &__check {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 12px;
-    color: white;
-    background-color: $third-color;
-    font-size: 22px;
-
-    border-radius: 0 15px 15px 0;
-    width: 59px !important;
-  }
 }
- .order-button {
-display: flex;
-justify-content: center;
+
+.fa-circle-check {
+  transition: all 1s;
+  color: $third-color;
+}
+
+.order-button {
+  display: flex;
+  justify-content: center;
   & a {
-    
     border-radius: 25px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     background: $button-gradient;
@@ -422,4 +405,38 @@ justify-content: center;
     color: white;
     text-align: center;
   }
+}
+
+///////*Animations*///////
+.fa-heart {
+  position: absolute;
+  top: 8px;
+  right: 28px;
+  font-size: 22px;
+  opacity: 1;
+  transition: 300ms;
+
+  &::after {
+    content: '';
+    font: var(--fa-font-solid);
+    content: '\f004';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $button-gradient;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    opacity: 0;
+  }
+}
+
+.checkbox_input {
+  display: none;
+}
+.checkbox_input:checked + .fa-heart::after {
+  animation: heart 500ms both cubic-bezier(0.59, 0.68, 0.34, 0.89);
 }
