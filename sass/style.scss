@@ -12,14 +12,14 @@ $dark-grey: #353535;
 $button-gradient: linear-gradient(0deg, #9356dc, #ff79d9);
 $dark-green: #008766;
 
-@mixin button($padding) {
+@mixin button($padding, $margin) {
   font-size: 16px;
   border-radius: 25px;
   border: 0;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: $button-gradient;
   padding: $padding;
-  margin-top: 27px;
+  margin: $margin;
   text-decoration: none;
   color: white;
 }
@@ -80,6 +80,7 @@ header {
 }
 .card-subtitle {
   margin: 0 0 18px 0;
+  font-weight: 300;
 }
 
 .explore {
@@ -88,7 +89,7 @@ header {
   background-color: $light-grey;
 
   .gradient-button {
-    @include button(13px 19px);
+    @include button(13px 19px, 27px 0 0 0);
 
     &:hover {
       filter: brightness(1.2);
@@ -99,7 +100,7 @@ header {
 .operating {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 20px 68px 20px;
 
   &__button {
     display: flex;
@@ -112,7 +113,7 @@ header {
     justify-content: center;
     flex-shrink: 0;
     position: absolute;
-    top: 27px;
+    top: 50px;
     font-size: 14px;
     width: 24px;
     height: 24px;
@@ -130,7 +131,7 @@ header {
     background-color: $light-grey;
     gap: 10px;
     padding: 28px 38px;
-    margin-left: 10px;
+    margin: 25px 0 0 12px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   }
 }
@@ -219,6 +220,7 @@ header {
 
   &__text-block-2 {
     margin: 0;
+    font-weight: 400;
   }
 }
 //////* Keyframes *//////
@@ -290,6 +292,7 @@ header {
     font-family: 'Shrikhand';
     font-size: 28px;
     margin: 0;
+    font-weight: 400;
   }
 }
 
@@ -364,11 +367,12 @@ header {
       text-overflow: ellipsis;
       overflow: hidden;
     }
-    & p {
+    & h4 {
       margin: 5px 0 0 0;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
+      font-weight: 300;
     }
   }
   &__price {
@@ -388,7 +392,7 @@ header {
   justify-content: center;
 }
 .order-button {
-  @include button(16px 49px);
+  @include button(16px 49px, 40px 0);
 
   &:hover {
     filter: brightness(1.2);
