@@ -276,18 +276,6 @@ header .header__location i {
   background-color: #99e2d0;
 }
 
-fa-circle-check {
-  content: "";
-  font: var(--fa-font-solid);
-  content: "\f058";
-  margin-top: 12px;
-  color: white;
-  background-color: #99e2d0;
-  font-size: 22px;
-  border-radius: 0 15px 15px 0;
-  width: 59px;
-}
-
 .menu-card {
   position: relative;
   overflow: hidden;
@@ -366,6 +354,9 @@ fa-circle-check {
   color: white;
   text-align: center;
 }
+.order-button:hover {
+  filter: brightness(1.2);
+}
 
 .fa-heart {
   position: absolute;
@@ -373,7 +364,6 @@ fa-circle-check {
   right: 28px;
   font-size: 22px;
   opacity: 1;
-  transition: 300ms;
 }
 .fa-heart::after {
   content: "";
