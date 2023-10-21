@@ -1,0 +1,20 @@
+@import "../base/color";
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.fa-location-dot {
+  color: $main-color;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

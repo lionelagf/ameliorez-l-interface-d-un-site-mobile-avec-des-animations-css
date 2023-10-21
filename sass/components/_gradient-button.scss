@@ -1,0 +1,28 @@
+  .explore-button {
+    @include button(13px 19px, 27px 0 0 0);
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+
+  .order {
+  display: flex;
+  justify-content: center;
+}
+  .order-button {
+  @include button(16px 49px, 40px 0);
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+
+ .gradient-button {
+    @include button(13px 19px, 27px 0 0 0);
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
