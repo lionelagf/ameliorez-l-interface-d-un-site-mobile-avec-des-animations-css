@@ -1,19 +1,32 @@
-@import "../base/color";
+@import '../base/color';
+@import 'animations/keyframes';
 
-.loader {
+$anim-dur: 800ms;
+$anim-delay: $anim-dur / 8;
+
+.load {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  top:0;
+position: fixed;
   height: 100%;
-  position: fixed;
-  font-family: 'Shrikhand';
-  font-size: 50px;
-  font-weight: 400;
-  -webkit-text-fill-color: transparent;
-  color: #99e2d0;
-  z-index: 0;
-  top: 0;
-  background-color: white;
-  opacity: 1;
+  width: 100%;
+  background: white;
+  z-index: 1;
+  opacity: 0.94;
+  animation: fade 5s forwards linear;
+
+  &__bar {
+    font-family: Shrikhand;
+    font-size: 50px;
+    color: #9356dc;
+    animation: letter $anim-dur backwards infinite linear alternate;
+    @for $i from 1 through 8 {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }
+  }
 }
+

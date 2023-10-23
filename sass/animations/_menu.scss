@@ -1,0 +1,14 @@
+.section-delay1 {
+  animation: section both 600ms ease-in-out;
+  opacity: 0;
+}
+
+.section-delay2 {
+  animation: section both 600ms 200ms ease-in-out;
+  opacity: 0;
+}
+
+.section-delay3 {
+  animation: section both 600ms 400ms ease-in-out;
+  opacity: 0;
+}

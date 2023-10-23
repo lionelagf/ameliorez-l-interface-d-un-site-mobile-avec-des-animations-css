@@ -1,5 +1,7 @@
 @import "../base/color";
 
+///////*Header Index*///////
+
 header {
   display: flex;
   flex-direction: column;
@@ -30,4 +32,24 @@ header {
       color: $dark-grey;
     }
   }
+}
+
+
+///////*Header Restaurants*///////
+
+.header__restaurant {
+  height: 250px;
+}
+
+.header__restaurant-img {
+  width: 100%;
+  position: relative;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
