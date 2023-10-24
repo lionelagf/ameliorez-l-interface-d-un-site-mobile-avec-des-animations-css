@@ -1,17 +1,47 @@
 .restaurants {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  margin-bottom: 66px;
+  padding: 34px 20px 66px 20px;
   background-color: $light-grey;
 
+  @media (min-width: 1024px) {
+    width: 100%;
+    padding: 0 40px 30px 40px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+
+&-title {
+  @media (min-width: 1440px) {
+    padding-left: 180px;
+  }
+}
+
+
+&__box1 {
+   @media (min-width: 1024px) {
+    
+    display: flex;
+    justify-content: space-between;
+   }
+   @media (min-width: 1440px) {
+    padding: 0 180px;
+   }
+}
+
   &__card {
+    
     position: relative;
     display: flex;
     flex-direction: column;
     background-color: white;
     margin-top: 18px;
     border-radius: 15px;
+
+    @media (min-width: 1024px) {
+      width: 490px;
+    }
   }
 
   &__new-note {
@@ -34,6 +64,7 @@
   }
   &__card-content {
     position: relative;
-    margin-left: 13px;
+    padding-left: 13px;
+    margin: 0;
   }
 }

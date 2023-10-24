@@ -1,6 +1,21 @@
-@import "../base/color";
+@import '../base/color';
 
+.explore {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 50px 57px 50px;
+  background-color: $light-grey;
 
+  & h2 {
+    padding-bottom: 20px;
+    margin: 0;
+  }
+  & h3 {
+    font-weight: 300;
+    margin: 0;
+  }
+}
 
 .menu-card {
   position: relative;
@@ -77,11 +92,32 @@
   border-radius: 40px 40px 0 0;
   background-color: $light-grey;
 
+  @media (min-width: 1024px) {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 210px 17px 210px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 210px 17px 210px;
+  }
+
   &__title {
+    display: flex;
     margin-top: 32px;
     position: relative;
+
+    @media (min-width: 1024px) {
+      justify-content: center;
+      position: relative;
+    }
   }
   &__title-h3 {
+    display: flex;
     font-family: 'Shrikhand';
     font-size: 28px;
     margin: 0;

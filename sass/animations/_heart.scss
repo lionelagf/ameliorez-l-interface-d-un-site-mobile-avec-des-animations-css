@@ -1,13 +1,16 @@
 @import "../base/color";
 
+
+
 .fa-heart {
+
   position: absolute;
   top: 8px;
   right: 28px;
   font-size: 22px;
   opacity: 1;
-
-  &::after {
+  
+   &::after {
     content: '';
     font: var(--fa-font-solid);
     content: '\f004';
@@ -30,4 +33,11 @@
 }
 .checkbox_input:checked + .fa-heart::after {
   animation: heart 500ms both cubic-bezier(0.59, 0.68, 0.34, 0.89);
+}
+
+.menu__heart {
+  @media (min-width: 1024px) {
+    position: relative;
+    right: -80px;
+  }
 }

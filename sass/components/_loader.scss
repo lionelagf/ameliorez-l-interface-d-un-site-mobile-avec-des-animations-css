@@ -1,7 +1,7 @@
 @import '../base/color';
 @import 'animations/keyframes';
 
-$anim-dur: 800ms;
+$anim-dur: 700ms;
 $anim-delay: $anim-dur / 8;
 
 .load {
@@ -30,3 +30,11 @@ position: fixed;
   }
 }
 
+.load2 {
+  display: flex;
+  height:100%;
+    width:100%;
+  position: relative;
+  top: -153px;
+  filter: brightness(1.2);
+}

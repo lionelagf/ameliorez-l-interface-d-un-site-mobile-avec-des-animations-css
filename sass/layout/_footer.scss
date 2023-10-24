@@ -1,6 +1,4 @@
-
-@import "../base/color";
-
+@import '../base/color';
 
 .column-footer {
   display: flex;
@@ -8,12 +6,29 @@
   background-color: $dark-grey;
   padding: 22px 25px;
 
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+    padding: 60px 25px 30px 25px;
+  }
+
   &__logo-footer {
     font-family: 'Shrikhand';
     font-size: 18px;
     font-weight: 400;
     color: white;
     margin: 0 0 16px 0;
+
+    @media (min-width: 1024px) {
+      margin: 0 20px 0 0;
+      line-height: 12px;
+    }
+  }
+
+  &__block {
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: reverse;
+    }
   }
 
   &__block-1 {
@@ -21,6 +36,12 @@
     flex-direction: column;
     color: white;
     row-gap: 7px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      margin-right: 30px;
+      gap: 10px;
+    }
   }
 
   &__text-block-1 {
@@ -42,6 +63,12 @@
     color: white;
     row-gap: 7px;
     margin-top: 7px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      margin: 0 70px 0 0;
+      gap: 10px;
+    }
   }
 
   &__text-block-2 {
