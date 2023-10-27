@@ -5,33 +5,30 @@
   background-color: $light-grey;
 
   @media (min-width: 1024px) {
-    width: 100%;
     padding: 0 40px 30px 40px;
   }
   @media (min-width: 1440px) {
     padding: 0;
   }
 
-&-title {
-  @media (min-width: 1440px) {
-    padding-left: 180px;
+  &_container {
+    @media (min-width: 1440px) {
+      width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-}
 
-
-&__box1 {
-   @media (min-width: 1024px) {
-    
-    display: flex;
-    justify-content: space-between;
-   }
-   @media (min-width: 1440px) {
-    padding: 0 180px;
-   }
-}
+  &__box1 {
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (min-width: 1440px) {
+    }
+  }
 
   &__card {
-    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -40,6 +37,9 @@
     border-radius: 15px;
 
     @media (min-width: 1024px) {
+      width: 450px;
+    }
+    @media (min-width: 1440px) {
       width: 490px;
     }
   }
