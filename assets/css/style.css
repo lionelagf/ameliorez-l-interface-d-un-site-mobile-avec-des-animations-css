@@ -90,6 +90,9 @@ header .header__location-text {
   background-color: #353535;
   padding: 22px 25px;
 }
+.column-footer h4 {
+  cursor: pointer;
+}
 @media (min-width: 1024px) {
   .column-footer {
     flex-direction: row-reverse;
@@ -193,6 +196,7 @@ header .header__location-text {
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   margin-top: 12px;
   border-radius: 15px;
+  cursor: pointer;
 }
 .menu-card:hover > .menu-card__check {
   margin-right: 0;
@@ -322,6 +326,7 @@ header .header__location-text {
   margin: 27px 0 0 0;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 .explore-button:hover {
   filter: brightness(1.2);
@@ -342,6 +347,7 @@ header .header__location-text {
   margin: 40px 0;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 .order-button:hover {
   filter: brightness(1.2);
@@ -526,7 +532,7 @@ header .header__location-text {
   top: 0;
   background: white;
   opacity: 0.9;
-  animation: fade 5s forwards linear;
+  animation: fade 3s forwards linear;
 }
 
 .load {
@@ -603,6 +609,10 @@ header .header__location-text {
 .operating__button {
   display: flex;
   position: relative;
+  cursor: pointer;
+}
+.operating__button:hover .fa-solid {
+  color: #9356dc;
 }
 @media (min-width: 1024px) {
   .operating__button {
@@ -637,13 +647,17 @@ header .header__location-text {
   margin: 25px 0 0 12px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
+.operating .fa-solid {
+  color: #7e7e7e;
+}
 
 .fa-heart {
   position: absolute;
-  top: 8px;
+  bottom: 40px;
   right: 28px;
   font-size: 22px;
   opacity: 1;
+  cursor: pointer;
 }
 .fa-heart::after {
   content: "";
@@ -670,6 +684,11 @@ header .header__location-text {
   animation: heart 500ms both cubic-bezier(0.59, 0.68, 0.34, 0.89);
 }
 
+.menu__heart {
+  position: relative;
+  bottom: -30px;
+  right: -135px;
+}
 @media (min-width: 1024px) {
   .menu__heart {
     position: relative;

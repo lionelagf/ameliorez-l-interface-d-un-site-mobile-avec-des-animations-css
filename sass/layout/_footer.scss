@@ -5,6 +5,10 @@
   flex-direction: column;
   background-color: $dark-grey;
   padding: 22px 25px;
+ 
+  h4 {
+     cursor: pointer;
+  }
 
   @media (min-width: 1024px) {
     flex-direction: row-reverse;

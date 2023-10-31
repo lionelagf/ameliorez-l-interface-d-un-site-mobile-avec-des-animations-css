@@ -5,10 +5,11 @@
 .fa-heart {
 
   position: absolute;
-  top: 8px;
+  bottom: 40px;
   right: 28px;
   font-size: 22px;
   opacity: 1;
+  cursor: pointer;
   
    &::after {
     content: '';
@@ -36,6 +37,9 @@
 }
 
 .menu__heart {
+  position: relative;
+  bottom: -30px;
+  right: -135px;
   @media (min-width: 1024px) {
     position: relative;
     right: -80px;
